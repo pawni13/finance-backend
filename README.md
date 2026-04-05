@@ -245,6 +245,35 @@ Unauthorized:
 ```json
 { "success": false, "message": "Access denied" }
 ```
+## Screenshots
+
+Postman test cases covering authentication, validation, role-based access, and dashboard endpoints.
+<p align="center">
+  <img src="https://github.com/user-attachments/assets/ab1e3e2f-2e80-4172-aa11-8464622310d7" width="30%" />
+  <img src="https://github.com/user-attachments/assets/e10f2a63-c27b-47bd-bec1-d1d70e413223" width="30%" />
+  <img src="https://github.com/user-attachments/assets/0604692c-9b5c-4ac6-a90c-593a3dc7b279" width="30%" />
+</p>
+
+<p align="center">
+  <img src="https://github.com/user-attachments/assets/9edb2d0e-cb6b-4193-a8e7-d9790423b221" width="30%" />
+  <img src="https://github.com/user-attachments/assets/0942919f-3177-4979-aef3-ed27312dba59" width="30%" />
+  <img src="https://github.com/user-attachments/assets/4ad6dcfe-b8c8-478a-9595-cc0b2f13211f" width="30%" />
+</p>
+
+<p align="center">
+  <img src="https://github.com/user-attachments/assets/0bc3f499-be1d-4938-9557-b08dafc0808f" width="30%" />
+  <img src="https://github.com/user-attachments/assets/e6a354bc-29b0-41a6-97b7-961552f92a39" width="30%" />
+  <img src="https://github.com/user-attachments/assets/c3dd8768-8a21-497c-ae18-e8f28a736e90" width="30%" />
+</p>
+<p align="center">
+<img width="30%" src="https://github.com/user-attachments/assets/c4fbf1a4-0c0b-4cc7-a9e5-9a85ad802ae3" />
+<img width="30%" src="https://github.com/user-attachments/assets/a0f47a2f-a5ef-415a-8384-e6469ac959df" />
+<img width="30%" src="https://github.com/user-attachments/assets/fe46aa08-9c47-4340-9377-9f594098de89" />
+  </p>
+  <p align="center">
+<img width="30%" src="https://github.com/user-attachments/assets/5faff8f9-a564-4eda-b38a-04b107d7c236" />
+<img width="30%" src="https://github.com/user-attachments/assets/0db7e118-53cd-4b1f-a725-dc7a4eb7469c" />
+</p>
 
 ## Notes
 
