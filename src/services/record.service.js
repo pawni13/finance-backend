@@ -1,7 +1,7 @@
 const prisma = require('../utils/prisma')
 const { createError } = require('../middleware/errorHandler')
 
-const getRecords = async ({ type, category, from, to, page = 1, limit = 10 }) => {
+const getRecords = async ({ type, category, from, to, page = 1, limit = 10, search }) => {
   const where = { deletedAt: null }
   if (type) where.type = type
   if (category) where.category = category
@@ -9,6 +9,12 @@ const getRecords = async ({ type, category, from, to, page = 1, limit = 10 }) =>
     where.date = {}
     if (from) where.date.gte = new Date(from)
     if (to) where.date.lte = new Date(to)
+  }
+  if (search) {
+    where.OR = [
+      { category: { contains: search, mode: 'insensitive' } },
+      { description: { contains: search, mode: 'insensitive' } }
+    ]
   }
 
   const skip = (page - 1) * limit

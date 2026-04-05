@@ -10,7 +10,14 @@ dotenv.config()
 
 const app = express()
 app.use(express.json())
+const rateLimit = require('express-rate-limit')
 
+const limiter = rateLimit({
+  windowMs: 15 * 60 * 1000,
+  max: 100,
+  message: { success: false, message: 'Too many requests, please try again later.' }
+})
+app.use(limiter)
 app.use('/api/auth', authRoutes)
 app.use('/api/users', userRoutes)
 app.use('/api/records', recordRoutes)
