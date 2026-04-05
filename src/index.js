@@ -18,6 +18,9 @@ const limiter = rateLimit({
   message: { success: false, message: 'Too many requests, please try again later.' }
 })
 app.use(limiter)
+app.get("/", (req, res) => {
+  res.send("Finance backend is running");
+});
 app.use('/api/auth', authRoutes)
 app.use('/api/users', userRoutes)
 app.use('/api/records', recordRoutes)
