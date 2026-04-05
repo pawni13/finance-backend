@@ -1,0 +1,11 @@
+const { Router } = require('express')
+const { authenticate } = require('../middleware/auth')
+const { roleGuard } = require('../middleware/roleGuard')
+const { getAllUsers, getUserById, updateUser, deleteUser } = require('../controllers/user.controller')
+const router = Router()
+router.use(authenticate)
+router.get('/', roleGuard('ADMIN'), getAllUsers)
+router.get('/:id', roleGuard('ADMIN'), getUserById)
+router.patch('/:id', roleGuard('ADMIN'), updateUser)
+router.delete('/:id', roleGuard('ADMIN'), deleteUser)
+module.exports = router

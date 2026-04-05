@@ -1,10 +1,10 @@
-import express from 'express'
-import dotenv from 'dotenv'
-import authRoutes from './routes/auth.routes.js'
-import userRoutes from './routes/user.routes.js'
-import recordRoutes from './routes/record.routes.js'
-import dashboardRoutes from './routes/dashboard.routes.js'
-import { errorHandler } from './middleware/errorHandler.js'
+const express = require('express')
+const dotenv = require('dotenv')
+const authRoutes = require('./routes/auth.routes')
+const userRoutes = require('./routes/user.routes')
+const recordRoutes = require('./routes/record.routes')
+const dashboardRoutes = require('./routes/dashboard.routes')
+const { errorHandler } = require('./middleware/errorHandler')
 
 dotenv.config()
 
