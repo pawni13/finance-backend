@@ -10,6 +10,10 @@ dotenv.config()
 
 const app = express()
 app.use(express.json())
+const swaggerUi = require('swagger-ui-express')
+const swaggerSpec = require('./utils/swagger')
+
+app.use('/api/docs', swaggerUi.serve, swaggerUi.setup(swaggerSpec))
 const rateLimit = require('express-rate-limit')
 
 const limiter = rateLimit({
