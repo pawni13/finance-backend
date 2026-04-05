@@ -2,6 +2,8 @@
 
 A RESTful backend for a finance dashboard system supporting authentication, role-based access control, financial record management, and summary analytics.
 
+## Live URL : 
+https://finance-backend-6fug.onrender.com
 ## Tech Stack
 
 | Layer         | Choice             | Reason                                    |
